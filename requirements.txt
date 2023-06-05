@@ -1,0 +1,23 @@
+python-Levenshtein==0.12.2
+thefuzz==0.19.0
+beautifulsoup4~=4.11.2
+requests~=2.28.2
+tqdm~=4.64.1
+markupsafe==2.0.1
+flask-bootstrap
+pytz~=2022.7.1
+nltk~=3.8.1
+pyyaml~=6.0
+aioflask~=0.4.0
+asyncio~=3.4.3
+
+Flask
+
+EdgeGPT
+# EdgeGPT==0.0.20
+ChatGPT
+# ChatGPT==2.0.0
+tiktoken
+openai
+# openai==0.26.5
+revChatGPT
