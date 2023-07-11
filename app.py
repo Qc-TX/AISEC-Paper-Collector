@@ -49,7 +49,6 @@ def add_item(item: dict):
 def load_data():
     with open(cache_json, "r") as f:
         data = json.load(f)
-
     for conf in data:
         year = re.search(r"\d{4}", conf).group()
         # cut by year
@@ -77,7 +76,6 @@ def load_data():
 
 
 load_data()
-
 
 def search(query, confs, year, sp_year=None, sp_author=None, limit=None):
     def match_author(authors, sp_author):
@@ -175,8 +173,8 @@ def get_guess_you_like_api():
         return {"message:": "query is null."}
     st = time.time()
     try:
-        # response  = asyncio.run(askEdgeHelper(query))
-        # response = askChatHelper(query)
+        response  = asyncio.run(askEdgeHelper(query))
+        response = askChatHelper(query)
         response = askChatGPTAPI(query)
     except:
         response = {"message": "Sorry, the sevice is not available now. Please hold on."}

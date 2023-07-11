@@ -11,6 +11,7 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36"
 }
 
+
 def search_from_iclr(url, name, res):
     r = requests.get(url, headers=HEADERS)
     data = r.json()
@@ -141,7 +142,8 @@ def search_abs_from_dblp(url):
 
     else:
         abstract = ""
-
+        print(f"无法获取{url}，Skip url")
+    time.sleep(3)
     return abstract
 
 
@@ -151,24 +153,27 @@ def search_from_dblp(url, name, res):
     if name not in res:
         res[name] = []
 
-    for paper_item in soup.find_all("li", class_=re.compile("entry. *")):
-        try:
-            paper_url = paper_item.find("li", class_="drop-down").div.a["href"]
-        except:
-            print('链接错误')
-        paper_name = paper_item.find(class_="title", itemprop="name")
+    for paper_item in soup.find_all("li", class_="entry"):
+        if paper_item.find("li", class_="drop-down") is None:
+            continue
+        else:
+            try:
+                paper_url = paper_item.find("li", class_="drop-down").div.a["href"]
+                paper_name = paper_item.find(class_="title", itemprop="name")
+                paper_authors = [
+                    re.sub("\d", "", author["title"]).strip()
+                    for author in paper_item.find_all(class_=None, itemprop="name") if author.has_attr("title")]
 
-        paper_authors = [
-            re.sub("\d", "", author["title"]).strip()
-            for author in paper_item.find_all(class_=None, itemprop="name") if author.has_attr("title")]
-
-        items = [item.string if item.string else item for item in paper_name.contents]
-        paper = "".join([item for item in items if isinstance(item, str)])
+                items = [item.string if item.string else item for item in paper_name.contents]
+                paper = "".join([item for item in items if isinstance(item, str)])
+            except:
+                print(f'{url}链接错误')
+                print(paper_item)
         try:
             # paper_abstract = search_abs_from_dblp(paper_url)
             paper_abstract = "" # due to limits
         except:
-            print(f"Skip url:{paper_url}")
+            print(f"无法获取abstract,Skip url:{paper_url}")
             paper_abstract = ""
         if paper[-1] == ".":
             paper = paper[:-1]
@@ -183,7 +188,6 @@ def search_from_dblp(url, name, res):
             }
         )
     return res
-
 
 
 def search_abs_from_thecvf(url):
@@ -273,9 +277,14 @@ def get_citation(keyword):
     url = f'https://api.semanticscholar.org/graph/v1/paper/search?query={keyword}&limit=1&fields=title,citationCount'
     r = requests.get(url, headers=HEADERS)
     data = r.json()
+    #如果有数据，取第一条数据的引用数
     if 'data' in data and len(data['data']):
-        citation = data['data'][0]['citationCount']
-        title = data['data'][0]['title']
+        if 'citationCount' in data['data'][0]:
+            citation = data['data'][0]['citationCount']
+            title = data['data'][0]['title']
+        else :
+            print(f'{url} No citationCount in {keyword}')
+            citation = 0
     else:
         citation = 0
     time.sleep(3)
@@ -283,7 +292,7 @@ def get_citation(keyword):
 
 def add_citation(res):
     for conf in res:
-        for ii, item in enumerate(tqdm(res[conf], desc="[+] Crawling Citation", dynamic_ncols=True)):
+        for ii, item in enumerate(tqdm(res[conf], desc=f"[+] Crawling Citation for {conf}", dynamic_ncols=True)):
             paper_name = item['paper_name']
             paper_citation = item["paper_cite"]
             if paper_citation != -1:
@@ -303,6 +312,8 @@ def crawl(cache_file=None, force=False):
     iclr_conf = json.load(open("conf/iclr_conf.json", "r"))
     thecvf_conf = json.load(open("conf/thecvf_conf.json", "r"))
     secA_conf = json.load(open("conf/secA_conf.json", "r"))
+    secB_conf = json.load(open("conf/secB_conf.json", "r"))
+    secC_conf = json.load(open("conf/secC_conf.json", "r"))
 
     cache_conf = []
     cache_res = {}
@@ -312,7 +323,6 @@ def crawl(cache_file=None, force=False):
         cache_conf = [name for name in cache_res.keys()]
 
     for conf in tqdm(acl_conf, desc="[+] Crawling ACL", dynamic_ncols=True):
-        #Tqdm is a Python progress bar library
         assert conf.get("name") and conf.get("url") and conf.get("tag")
         url, tag, name = conf["url"], conf["tag"], conf["name"]
         if name in cache_conf:
@@ -347,8 +357,22 @@ def crawl(cache_file=None, force=False):
         if name in cache_conf:
             continue
         res = search_from_dblp(url, name, res)
-    
+
     for conf in tqdm(secA_conf, desc="[+] Crawling secA", dynamic_ncols=True):
+        assert conf.get("name") and conf.get("url")
+        url, name = conf["url"], conf["name"]
+        if name in cache_conf:
+            continue
+        res = search_from_dblp(url, name, res)
+
+    for conf in tqdm(secB_conf, desc="[+] Crawling secB", dynamic_ncols=True):
+        assert conf.get("name") and conf.get("url")
+        url, name = conf["url"], conf["name"]
+        if name in cache_conf:
+            continue
+        res = search_from_dblp(url, name, res)
+
+    for conf in tqdm(secC_conf, desc="[+] Crawling secC", dynamic_ncols=True):
         assert conf.get("name") and conf.get("url")
         url, name = conf["url"], conf["name"]
         if name in cache_conf:
@@ -357,8 +381,8 @@ def crawl(cache_file=None, force=False):
      
     res.update(cache_res)
 
-    # res = add_code_links(res) # 安全相关论文无法爬取code_link
-    # res = add_citation(res) # hard to get citations
+    # res = add_code_links(res)
+    res = add_citation(res) # hard to get citations
 
     return res
 

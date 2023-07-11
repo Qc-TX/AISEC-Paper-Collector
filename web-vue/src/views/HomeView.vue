@@ -33,6 +33,17 @@ let searchContent = reactive({
     'CRYPTO',
     'TDSC',
     'TIFS',
+    'ACSAC',
+    'ASIACRYPT',
+    'CHES',
+    'DSN',
+    'ESORICS',
+    'FSE',
+    'ICDCS',
+    'PKC',
+    'RAID',
+    'SRDS',
+    'TCC',
     'AAAI',
     'ACL',
     'AISTATS',
@@ -74,7 +85,30 @@ let searchContent = reactive({
     'VLDB',
     'WACV',
     'WSDM',
-    'WWW'
+    'WWW',
+    'ACISP',
+    'ACNS',
+    'ASIACCS',
+    'CT-RSA',
+    'DFRWS-EU',
+    'DIMVA',
+    'EuroS&P',
+    'FC',
+    'ICDF2C',
+    'ICICS',
+    'IH&MMSec',
+    'ISC',
+    'InSCrypt',
+    'NSPW',
+    'PAM',
+    'PETS',
+    'SAC',
+    'SACMAT',
+    'SEC',
+    'SOUPS',
+    'SecureComm',
+    'TrustCom',
+    'WiSec'
   ]
 })
 // Search type list
@@ -223,10 +257,26 @@ const toggleDark = useToggle(isDark)
           <el-link
             type="primary"
             icon="Link"
-            href="https://github.com/MLNLP-World/AI-Paper-Collector"
+            href="https://github.com/Qc-TX/AISEC-Paper-Collector"
             target="_blank"
           >
             &nbsp;GitHub
+          </el-link>
+          <el-link
+            type="primary"
+            icon="Link"
+            href="http://123.57.137.208/ccf/ccf-3.jsp"
+            target="_blank"
+          >
+            &nbsp;CCF-CFP
+          </el-link>
+          <el-link
+            type="primary"
+            icon="Link"
+            href="https://ccfddl.github.io/"
+            target="_blank"
+          >
+            &nbsp;CCF-DDL
           </el-link>
         </div>
         <!-- Tips -->
@@ -266,7 +316,7 @@ const toggleDark = useToggle(isDark)
     <!-- Copy right -->
     <div :class="['copy-right mb-15', firstEntry ? 'copy-first-entry' : '']">
       <a href="https://beian.miit.gov.cn/" target="_blank">
-        <img src="@/assets/beian.png" />浙ICP备2023002681号-1
+        <img src="" />@SCU&CCS-911
       </a>
     </div>
   </main>

@@ -43,6 +43,17 @@ const CONFS_LIST = [
   'CRYPTO',
   'TDSC',
   'TIFS',
+  'ACSAC',
+  'ASIACRYPT',
+  'CHES',
+  'DSN',
+  'ESORICS',
+  'FSE',
+  'ICDCS',
+  'PKC',
+  'RAID',
+  'SRDS',
+  'TCC',
   'AAAI',
   'ACL',
   'AISTATS',
@@ -84,7 +95,30 @@ const CONFS_LIST = [
   'VLDB',
   'WACV',
   'WSDM',
-  'WWW'
+  'WWW',
+  'ACISP',
+  'ACNS',
+  'ASIACCS',
+  'CT-RSA',
+  'DFRWS-EU',
+  'DIMVA',
+  'EuroS&P',
+  'FC',
+  'ICDF2C',
+  'ICICS',
+  'IH&MMSec',
+  'ISC',
+  'InSCrypt',
+  'NSPW',
+  'PAM',
+  'PETS',
+  'SAC',
+  'SACMAT',
+  'SEC',
+  'SOUPS',
+  'SecureComm',
+  'TrustCom',
+  'WiSec'
 ]
 let formData: FORMDATA = reactive({
   query: '',
@@ -116,6 +150,14 @@ const checkMethod: (method: string) => void = method => {
     const SELECTED = new Set(formData.confs)
     //其中安全相关的会议
     formData.confs = CONFS_LIST.filter(v => SELECTED.has(v) || v === 'CCS' || v === 'SP' || v === 'NDSS' || v === 'USENIX' || v === 'EUROCRYPT' || v === 'CRYPTO' || v === 'TDSC' || v === 'TIFS')
+  } else if (method === 'SECB') {
+    const SELECTED = new Set(formData.confs)
+    //其中安全相关的会议
+    formData.confs = CONFS_LIST.filter(v => SELECTED.has(v) || v === 'ACSAC' || v === 'ASIACRYPT' || v === 'CHES' || v === 'DSN' || v === 'ESORICS' || v === 'FSE' || v === 'ICDCS' || v === 'PKC' || v === 'RAID' || v === 'SRDS' || v === 'TCC')
+  } else if (method === 'SECC') {
+    const SELECTED = new Set(formData.confs)
+    //其中安全相关的会议
+    formData.confs = CONFS_LIST.filter(v => SELECTED.has(v) || v ==='ACISP' || v === 'ACNS' || v === 'ASIACCS' || v === 'CT-RSA' || v === 'DFRWS-EU' || v === 'DIMVA' || v === 'EuroS&P' || v === 'FC' || v === 'ICDF2C' || v === 'ICICS' || v === 'IH&MMSec' || v === 'ISC' || v === 'InSCrypt' || v === 'NSPW' || v === 'PAM' || v === 'PETS' || v === 'SAC' || v === 'SACMAT' || v === 'SEC' || v === 'SOUPS' || v === 'SecureComm' || v === 'TrustCom' || v === 'WiSec')
   }
 }
 
@@ -170,9 +212,11 @@ defineExpose({
       <el-form-item label="Confs" prop="confs">
         <el-row class="w-100" :gutter="20">
           <el-col :span="24">
-            <el-link type="primary" @click="checkMethod('all')" style="margin-right:95px">Check All</el-link>
-            <el-link type="primary" @click="checkMethod('SECA')" style="margin-right:90px">Check SEC-A</el-link>
-            <el-link type="primary" @click="checkMethod('invert')" style="margin-right:10px">Check Invert</el-link>
+            <el-link type="primary" @click="checkMethod('all')" style="margin-right:60px">Check All</el-link>
+            <el-link type="primary" @click="checkMethod('SECA')" style="margin-right:60px">SEC-A</el-link>
+            <el-link type="primary" @click="checkMethod('SECB')" style="margin-right:60px">SEC-B</el-link>
+            <el-link type="primary" @click="checkMethod('SECC')" style="margin-right:60px">SEC-C</el-link>
+            <el-link type="primary" @click="checkMethod('invert')" style="margin-right:60px">Invert</el-link>
           </el-col>
         </el-row>
       </el-form-item>
@@ -209,27 +253,27 @@ defineExpose({
 <style>
 @media (min-width: 1920px) {
   .dialog-advancedSetting {
-    width: 30%;
+    width: 35%;
   }
 }
 @media (max-width: 1920px) {
   .dialog-advancedSetting {
-    width: 35%;
+    width: 40%;
   }
 }
 @media (max-width: 1200px) {
   .dialog-advancedSetting {
-    width: 50%;
+    width: 40%;
   }
 }
 @media (max-width: 992px) {
   .dialog-advancedSetting {
-    width: 55%;
+    width: 40%;
   }
 }
 @media (max-width: 768px) {
   .dialog-advancedSetting {
-    width: 90%;
+    width: 40%;
   }
 }
 </style>

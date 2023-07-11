@@ -76,6 +76,17 @@ const changeSortMethod = (method: any): void => {
     resultList.val = resultList.val.sort(
       (a: any, b: any) => Number(b.year) - Number(a.year)
     )
+  } //排序选出存在code链接的论文在前面
+  else if (method === 'Code') {
+    resultList.val = resultList.val.sort((a: any, b: any) => {
+      if (a.code === '#') {
+        return 1
+      } else if (b.code === '#') {
+        return -1
+      } else {
+        return 0
+      }
+    })
   } else if (method === 'Conf') {
     console.log(11)
     resultList.val = resultList.val.sort((a: any, b: any) => {
@@ -147,6 +158,7 @@ defineExpose({
         <el-radio label="Hot" />
         <el-radio label="Year" />
         <el-radio label="Conf" />
+        <el-radio label="Code" />
       </el-radio-group>
     </el-row>
     <el-space class="w-100" wrap fill direction="vertical">

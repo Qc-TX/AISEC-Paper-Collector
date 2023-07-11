@@ -1,312 +1,378 @@
 [
     {
-        "name": "CCS2022",
-        "url": "https://dblp.org/db/conf/ccs/ccs2022.html"
+        "url": "https://dblp.org/db/conf/ndss/ndss2018.html",
+        "name": "NDSS2018"
     },
     {
-        "name": "CCS2021",
-        "url": "https://dblp.org/db/conf/ccs/ccs2021.html"
+        "url": "https://dblp.org/db/conf/ndss/ndss2019.html",
+        "name": "NDSS2019"
     },
     {
-        "name": "CCS2020",
-        "url": "https://dblp.org/db/conf/ccs/ccs2020.html"
+        "url": "https://dblp.org/db/conf/ndss/ndss2020.html",
+        "name": "NDSS2020"
     },
     {
-        "name": "CCS2019",
-        "url": "https://dblp.org/db/conf/ccs/ccs2019.html"
+        "url": "https://dblp.org/db/conf/ndss/ndss2021.html",
+        "name": "NDSS2021"
     },
     {
-        "name": "CCS2018",
-        "url": "https://dblp.org/db/conf/ccs/ccs2018.html"
+        "url": "https://dblp.org/db/conf/ndss/ndss2022.html",
+        "name": "NDSS2022"
     },
     {
-        "name": "SP2022",
-        "url": "https://dblp.org/db/conf/sp/sp2022.html"
+        "url": "https://dblp.org/db/conf/ndss/ndss2023.html",
+        "name": "NDSS2023"
     },
     {
-        "name": "SP2021",
-        "url": "https://dblp.org/db/conf/sp/sp2021.html"
+        "url": "https://dblp.org/db/conf/sp/sp2018.html",
+        "name": "IEEE S&P2018"
     },
     {
-        "name": "SP2020",
-        "url": "https://dblp.org/db/conf/sp/sp2020.html"
+        "url": "https://dblp.org/db/conf/sp/sp2019.html",
+        "name": "IEEE S&P2019"
     },
     {
-        "name": "SP2019",
-        "url": "https://dblp.org/db/conf/sp/sp2019.html"
+        "url": "https://dblp.org/db/conf/sp/sp2020.html",
+        "name": "IEEE S&P2020"
     },
     {
-        "name": "SP2018",
-        "url": "https://dblp.org/db/conf/sp/sp2018.html"
+        "url": "https://dblp.org/db/conf/sp/sp2021.html",
+        "name": "IEEE S&P2021"
     },
     {
-        "name": "NDSS2023",
-        "url": "https://dblp.org/db/conf/ndss/ndss2023.html"
+        "url": "https://dblp.org/db/conf/sp/sp2022.html",
+        "name": "IEEE S&P2022"
     },
     {
-        "name": "NDSS2022",
-        "url": "https://dblp.org/db/conf/ndss/ndss2022.html"
+        "url": "https://dblp.org/db/conf/uss/uss2018.html",
+        "name": "USENIX2018"
     },
     {
-        "name": "NDSS2021",
-        "url": "https://dblp.org/db/conf/ndss/ndss2021.html"
+        "url": "https://dblp.org/db/conf/uss/uss2019.html",
+        "name": "USENIX2019"
     },
     {
-        "name": "NDSS2020",
-        "url": "https://dblp.org/db/conf/ndss/ndss2020.html"
+        "url": "https://dblp.org/db/conf/uss/uss2020.html",
+        "name": "USENIX2020"
     },
     {
-        "name": "NDSS2019",
-        "url": "https://dblp.org/db/conf/ndss/ndss2019.html"
+        "url": "https://dblp.org/db/conf/uss/uss2021.html",
+        "name": "USENIX2021"
     },
     {
-        "name": "NDSS2018",
-        "url": "https://dblp.org/db/conf/ndss/ndss2018.html"
+        "url": "https://dblp.org/db/conf/uss/uss2022.html",
+        "name": "USENIX2022"
     },
     {
-        "name": "USENIX2022",
-        "url": "https://dblp.org/db/conf/uss/uss2022.html"
+        "url": "https://dblp.org/db/conf/ccs/ccs2018.html",
+        "name": "CCS2018"
     },
     {
-        "name": "USENIX2021",
-        "url": "https://dblp.org/db/conf/uss/uss2021.html"
+        "url": "https://dblp.org/db/conf/ccs/ccs2019.html",
+        "name": "CCS2019"
     },
     {
-        "name": "USENIX2020",
-        "url": "https://dblp.org/db/conf/uss/uss2020.html"
+        "url": "https://dblp.org/db/conf/ccs/ccs2020.html",
+        "name": "CCS2020"
     },
     {
-        "name": "USENIX2019",
-        "url": "https://dblp.org/db/conf/uss/uss2019.html"
+        "url": "https://dblp.org/db/conf/ccs/ccs2021.html",
+        "name": "CCS2021"
     },
     {
-        "name": "USENIX2018",
-        "url": "https://dblp.org/db/conf/uss/uss2018.html"
+        "url": "https://dblp.org/db/conf/ccs/ccs2022.html",
+        "name": "CCS2022"
     },
     {
-        "name": "EUROCRYPT2023",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-1.html"
+        "url": "https://dblp.org/db/conf/crypto/crypto2018-1.html",
+        "name": "CRYPTO2018"
     },
     {
-        "name": "EUROCRYPT2023",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-2.html"
+        "url": "https://dblp.org/db/conf/crypto/crypto2018-2.html",
+        "name": "CRYPTO2018"
     },
     {
-        "name": "EUROCRYPT2023",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-3.html"
+        "url": "https://dblp.org/db/conf/crypto/crypto2018-3.html",
+        "name": "CRYPTO2018"
     },
     {
-        "name": "EUROCRYPT2023",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-4.html"
+        "url": "https://dblp.org/db/conf/crypto/crypto2018-4.html",
+        "name": "CRYPTO2018"
     },
     {
-        "name": "EUROCRYPT2022",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-1.html"
+        "url": "https://dblp.org/db/conf/crypto/crypto2019-1.html",
+        "name": "CRYPTO2019"
     },
     {
-        "name": "EUROCRYPT2022",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-2.html"
-    },    
+        "url": "https://dblp.org/db/conf/crypto/crypto2019-2.html",
+        "name": "CRYPTO2019"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2019-3.html",
+        "name": "CRYPTO2019"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2019-4.html",
+        "name": "CRYPTO2019"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2020-1.html",
+        "name": "CRYPTO2020"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2020-2.html",
+        "name": "CRYPTO2020"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2020-3.html",
+        "name": "CRYPTO2020"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2020-4.html",
+        "name": "CRYPTO2020"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2021-1.html",
+        "name": "CRYPTO2021"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2021-2.html",
+        "name": "CRYPTO2021"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2021-3.html",
+        "name": "CRYPTO2021"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2021-4.html",
+        "name": "CRYPTO2021"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2022-1.html",
+        "name": "CRYPTO2022"
+    },
+    {
+        "url": "https://dblp.org/db/conf/crypto/crypto2022-2.html",
+        "name": "CRYPTO2022"
+    },
     {
-        "name": "EUROCRYPT2022",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-3.html"
+        "url": "https://dblp.org/db/conf/crypto/crypto2022-3.html",
+        "name": "CRYPTO2022"
     },
     {
-        "name": "EUROCRYPT2022",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-4.html"
+        "url": "https://dblp.org/db/conf/crypto/crypto2022-4.html",
+        "name": "CRYPTO2022"
     },
     {
-        "name": "EUROCRYPT2021",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2021-1.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-1.html",
+        "name": "UROCRYPT2018"
     },
     {
-        "name": "EUROCRYPT2021",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2021-2.html"
-    },    
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-2.html",
+        "name": "UROCRYPT2018"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-3.html",
+        "name": "UROCRYPT2018"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-4.html",
+        "name": "UROCRYPT2018"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-1.html",
+        "name": "UROCRYPT2019"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-2.html",
+        "name": "UROCRYPT2019"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-3.html",
+        "name": "UROCRYPT2019"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-4.html",
+        "name": "UROCRYPT2019"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2020-1.html",
+        "name": "UROCRYPT2020"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2020-2.html",
+        "name": "UROCRYPT2020"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2020-3.html",
+        "name": "UROCRYPT2020"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2021-1.html",
+        "name": "UROCRYPT2021"
+    },
     {
-        "name": "EUROCRYPT2021",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2021-3.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2021-2.html",
+        "name": "UROCRYPT2021"
     },
     {
-        "name": "EUROCRYPT2021",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2021-4.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2021-3.html",
+        "name": "UROCRYPT2021"
     },
     {
-        "name": "EUROCRYPT2020",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2020-1.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-1.html",
+        "name": "UROCRYPT2022"
     },
     {
-        "name": "EUROCRYPT2020",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2020-2.html"
-    },    
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-2.html",
+        "name": "UROCRYPT2022"
+    },
+    {
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-3.html",
+        "name": "UROCRYPT2022"
+    },
     {
-        "name": "EUROCRYPT2020",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2020-3.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-4.html",
+        "name": "UROCRYPT2022"
     },
     {
-        "name": "EUROCRYPT2020",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2020-4.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-1.html",
+        "name": "UROCRYPT2023"
     },
     {
-        "name": "EUROCRYPT2019",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-1.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-2.html",
+        "name": "UROCRYPT2023"
     },
     {
-        "name": "EUROCRYPT2019",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-2.html"
-    },    
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-3.html",
+        "name": "UROCRYPT2023"
+    },
     {
-        "name": "EUROCRYPT2019",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-3.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-4.html",
+        "name": "UROCRYPT2023"
     },
     {
-        "name": "EUROCRYPT2019",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-4.html"
+        "url": "https://dblp.org/db/journals/tdsc/tdsc15.html",
+        "name": "TDSC2018"
     },
     {
-        "name": "EUROCRYPT2018",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-1.html"
+        "url": "https://dblp.org/db/journals/tdsc/tdsc16.html",
+        "name": "TDSC2019"
     },
     {
-        "name": "EUROCRYPT2018",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-2.html"
+        "url": "https://dblp.org/db/journals/tdsc/tdsc17.html",
+        "name": "TDSC2020"
     },
     {
-        "name": "EUROCRYPT2018",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-3.html"
+        "url": "https://dblp.org/db/journals/tdsc/tdsc18.html",
+        "name": "TDSC2021"
     },
     {
-        "name": "EUROCRYPT2018",
-        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-4.html"
+        "url": "https://dblp.org/db/journals/tdsc/tdsc19.html",
+        "name": "TDSC2022"
     },
     {
-        "name": "CRYPTO2022",
-        "url": "https://dblp.org/db/conf/crypto/crypto2022-1.html"
+        "url": "https://dblp.org/db/journals/tdsc/tdsc20.html",
+        "name": "TDSC2023"
     },
     {
-        "name": "CRYPTO2022",
-        "url": "https://dblp.org/db/conf/crypto/crypto2022-2.html"
+        "url": "https://dblp.org/db/journals/tifs/tifs13.html",
+        "name": "TIFS2018"
     },
     {
-        "name": "CRYPTO2022",
-        "url": "https://dblp.org/db/conf/crypto/crypto2022-3.html"
+        "url": "https://dblp.org/db/journals/tifs/tifs14.html",
+        "name": "TIFS2019"
     },
     {
-        "name": "CRYPTO2022",
-        "url": "https://dblp.org/db/conf/crypto/crypto2022-4.html"
+        "url": "https://dblp.org/db/journals/tifs/tifs15.html",
+        "name": "TIFS2020"
     },
     {
-        "name": "CRYPTO2022",
-        "url": "https://dblp.org/db/conf/crypto/crypto2021-1.html"
+        "url": "https://dblp.org/db/journals/tifs/tifs16.html",
+        "name": "TIFS2021"
     },
     {
-        "name": "CRYPTO2021",
-        "url": "https://dblp.org/db/conf/crypto/crypto2021-2.html"
+        "url": "https://dblp.org/db/journals/tifs/tifs17.html",
+        "name": "TIFS2022"
     },
     {
-        "name": "CRYPTO2021",
-        "url": "https://dblp.org/db/conf/crypto/crypto2021-3.html"
+        "url": "https://dblp.org/db/journals/tifs/tifs18.html",
+        "name": "TIFS2023"
     },
     {
-        "name": "CRYPTO2021",
-        "url": "https://dblp.org/db/conf/crypto/crypto2021-4.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-1.html",
+        "name": "EUROCRYPT2018"
     },
     {
-        "name": "CRYPTO2020",
-        "url": "https://dblp.org/db/conf/crypto/crypto2020-1.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-2.html",
+        "name": "EUROCRYPT2018"
     },
     {
-        "name": "CRYPTO2020",
-        "url": "https://dblp.org/db/conf/crypto/crypto2020-2.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2018-3.html",
+        "name": "EUROCRYPT2018"
     },
     {
-        "name": "CRYPTO2020",
-        "url": "https://dblp.org/db/conf/crypto/crypto2020-3.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-1.html",
+        "name": "EUROCRYPT2019"
     },
     {
-        "name": "CRYPTO2020",
-        "url": "https://dblp.org/db/conf/crypto/crypto2020-4.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-2.html",
+        "name": "EUROCRYPT2019"
     },
     {
-        "name": "CRYPTO2019",
-        "url": "https://dblp.org/db/conf/crypto/crypto2019-1.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2019-3.html",
+        "name": "EUROCRYPT2019"
     },
     {
-        "name": "CRYPTO2019",
-        "url": "https://dblp.org/db/conf/crypto/crypto2019-2.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2020-1.html",
+        "name": "EUROCRYPT2020"
     },
     {
-        "name": "CRYPTO2019",
-        "url": "https://dblp.org/db/conf/crypto/crypto2019-3.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2020-2.html",
+        "name": "EUROCRYPT2020"
     },
     {
-        "name": "CRYPTO2019",
-        "url": "https://dblp.org/db/conf/crypto/crypto2019-4.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2020-3.html",
+        "name": "EUROCRYPT2020"
     },
     {
-        "name": "CRYPTO2018",
-        "url": "https://dblp.org/db/conf/crypto/crypto2018-1.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2021-1.html",
+        "name": "EUROCRYPT2021"
     },
     {
-        "name": "CRYPTO2018",
-        "url": "https://dblp.org/db/conf/crypto/crypto2018-2.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2021-2.html",
+        "name": "EUROCRYPT2021"
     },
     {
-        "name": "CRYPTO2018",
-        "url": "https://dblp.org/db/conf/crypto/crypto2018-3.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2021-3.html",
+        "name": "EUROCRYPT2021"
     },
     {
-        "name": "CRYPTO2018",
-        "url": "https://dblp.org/db/conf/crypto/crypto2018-4.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-1.html",
+        "name": "EUROCRYPT2022"
     },
     {
-        "name": "TDSC2023",
-        "url": "https://dblp.uni-trier.de/db/journals/tdsc/tdsc20.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-2.html",
+        "name": "EUROCRYPT2022"
     },
     {
-        "name": "TDSC2022",
-        "url": "https://dblp.uni-trier.de/db/journals/tdsc/tdsc19.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2022-3.html",
+        "name": "EUROCRYPT2022"
     },
     {
-        "name": "TDSC2021",
-        "url": "https://dblp.uni-trier.de/db/journals/tdsc/tdsc18.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-1.html",
+        "name": "EUROCRYPT2023"
     },
     {
-        "name": "TDSC2020",
-        "url": "https://dblp.uni-trier.de/db/journals/tdsc/tdsc17.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-2.html",
+        "name": "EUROCRYPT2023"
     },
     {
-        "name": "TDSC2019",
-        "url": "https://dblp.uni-trier.de/db/journals/tdsc/tdsc16.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-3.html",
+        "name": "EUROCRYPT2023"
     },
     {
-        "name": "TDSC2018",
-        "url": "https://dblp.uni-trier.de/db/journals/tdsc/tdsc15.html"
+        "url": "https://dblp.org/db/conf/eurocrypt/eurocrypt2023-4.html",
+        "name": "EUROCRYPT2023"
     }
-    ,
-    {
-        "name": "TIFS2023",
-        "url": "https://dblp.uni-trier.de/db/journals/tifs/tifs18.html"
-    },
-    {
-        "name": "TIFS2022",
-        "url": "https://dblp.uni-trier.de/db/journals/tifs/tifs17.html"
-    },
-    {
-        "name": "TIFS2021",
-        "url": "https://dblp.uni-trier.de/db/journals/tifs/tifs16.html"
-    },
-    {
-        "name": "TIFS2020",
-        "url": "https://dblp.uni-trier.de/db/journals/tifs/tifs15.html"
-    },
-    {
-        "name": "TIFS2019",
-        "url": "https://dblp.uni-trier.de/db/journals/tifs/tifs14.html"
-    },
-    {
-        "name": "TIFS2018",
-        "url": "https://dblp.uni-trier.de/db/journals/tifs/tifs13.html"
-    }
-
 ]
